@@ -4,8 +4,20 @@
 //
 // Iteration 3: Loops
 
-let hacker1 = "JOHN"
+let hacker1 = "SERGI"
 console.log("The driver's name is " + hacker1)
 let hacker2 = "MARIA"
 console.log("The navigator's name is " + hacker2)
 
+
+let hacker1length = hacker1.length
+let hacker2length = hacker2.length
+//console.log(hacker1length, hacker2length)
+
+if (hacker1length > hacker2length) {
+    console.log("The driver has the longest name, it has " + hacker1length + " characters.")
+} else if (hacker1length < hacker2length) {
+    console.log("It seems that the navigator has the longest name, it has " + hacker2length + " characters.")
+} else if (hacker1length = hacker2length) {
+    console.log(`Wow, you both have equally long names, ${hacker1length} characters!`)
+}
