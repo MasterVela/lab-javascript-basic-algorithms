@@ -6,7 +6,7 @@
 
 let hacker1 = "SERGI"
 console.log("The driver's name is " + hacker1)
-let hacker2 = "MARIA"
+let hacker2 = "ANNA"
 console.log("The navigator's name is " + hacker2)
 
 
@@ -21,3 +21,22 @@ if (hacker1length > hacker2length) {
 } else if (hacker1length = hacker2length) {
     console.log(`Wow, you both have equally long names, ${hacker1length} characters!`)
 }
+
+let normalName = []
+let reverseName = []
+for (let i = 0; i < hacker1.length; ++i) {
+    normalName.push(hacker1[i])
+}
+console.log(normalName)
+
+for (let i = 0; i < hacker1.length; ++i) {
+    reverseName.unshift(hacker1[i])
+}
+console.log(reverseName)
+
+if (hacker1 < hacker2) {
+    console.log("`The driver's name goes first.`")
+}else if (hacker1 > hacker2) {
+    console.log("Yo, the navigator goes first definitely.")
+}else
+    console.log("What?! You both have the same name?")
